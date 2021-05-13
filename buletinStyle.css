@@ -1,0 +1,291 @@
+//stilizari pagina
+
+
+.big-page{
+width: 1500px;
+margin: 0 auto;
+position: relative;
+text-align: center;
+
+}
+
+body, html{
+	margin:0;
+	height:100%;
+	text-align: center;
+	
+height:100%;
+background-repeat: no-repeat;
+background-position: fixed;
+background-size: cover;
+scroll-behavior: smooth;
+background-color: rgb(255 182 193);
+
+
+
+}
+form{
+	display: inline-block;
+}
+
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+    margin-left:0.5em;
+    padding-left: 20px;
+}
+.field1{
+	margin-left:10px;
+	padding :0, auto;
+	border:2px dotted red;
+	width:1000px;
+	display: inline-block;
+	margin-bottom:30px;
+	margin-top:20px;
+	justify-content:center;
+	text-align:center;
+	height:400px;
+	padding-right:10px;
+	background:linear-gradient( #DC143C 20%, #FFD700 66%, #0000CD 100%);
+	position: relative;
+}
+.field1 >h2{
+	font-weight:bold;
+	color:rgb(100,0,0);
+}
+*{
+	
+	font-family:papyrus;
+	font-weight:800;
+}
+	
+
+
+
+.forms{
+	display: inline-block;
+	width:1200px;
+	height:auto
+	border: 5px solid #556B2F;
+	border:5px groove rgb(75 0 130);
+	margin:0, auto;
+	align-items:center;
+	margin-right:130px;
+	margin-left:110px;
+    }
+    
+    
+ .field2{
+ 	display:inline-block;
+ 	margin-right:75px;
+ 	width:350px;
+ 	text-align: center;
+ 	height:400px;
+ 	border:2px outset rgb(240 230 140);
+ 	margin-left:10px, auto;
+ 	padding-left:30px;
+ 	padding-right:20px;
+ 	background:linear-gradient( #DC143C 20%, #FFD700 66%, #0000CD 100%);
+ 	position: relative;
+ }
+
+ .field2 >h3{
+ 	color:#b1b11e;
+ 	font-weight: bold;
+ }
+ .field3{
+ 	display:inline-block;
+ 	width: 500px;
+ 	border:2px outset rgb(70 130 180);
+ 	text-align:center;
+ 	height:400px;
+ 	padding-left:50px;
+ 	padding-right:40px;
+ 	background:linear-gradient( #DC143C 20%, #FFD700 66%, #0000CD 100%);
+ 	position:relative;
+ }
+ .field3 >h4{
+ 	font-weight: bold;
+ 	color:#214775;
+ }
+ h1{
+ 	color:black;
+ 	transition: color 1s ease;
+ 	position:relative;
+ 	-webkit-animation: cap 8s 2s infinite alternate;
+ 	
+ }
+
+ @keyframes cap{
+ 	0% {color:black;right:0;}
+ 	25%{color:rgb(64 224 208);right:300px;}
+ 	
+ 	75%{color:rgb(64 224 208);right:-300px;}
+ 	100%{color:black;right:0px;}
+ 	}
+
+ 
+
+
+/*field 1 aranjament elemente*/
+ 	}
+ 	.personal{
+ 		
+ 		display: inline-block;
+ 		text-align: center;
+ 		margin:0 auto;
+ 		width:150px;
+ 		padding:5px 2px 5px 2px;
+ 		margin-right:10px;
+ 		margin-bottom:20px;
+ 	
+ 	
+}
+ 	label{
+ 		text-align: center;
+ 		margin:0 auto;
+ 		width:250px;
+ 		height:250px;
+ 		color:rgb(11 11 39);
+ 		padding:10px 15px 15px 2px;
+ 		
+ 		margin:2px 1px 2px 1px;
+ 	}
+ 	.item{
+ 		display: inline-block;
+ 		text-align: center;
+ 		margin:0 auto;
+ 		width:200px;
+ 		padding:5px 2px 5px 2px;
+ 		margin-top:10px;
+ 		margin-right:10px;
+ 	}
+ 	/* id-uri si clase fielduri 3*/
+ 	#cnp{
+ 		color: darkmagenta;
+ 		font-family: Georgia;
+ 		font-size:13px;
+ 		font-weight:bold;
+ 	}
+ 	#seria_numar{
+ 		color: darkmagenta;
+ 		font-family: Georgia;
+ 		font-size:13px;
+ 		font-weight:bold;
+
+ 	}
+
+ 	#poza{
+ 		margin-bottom:20px;
+ 	}
+
+ 	.inner-button{
+ 		width:220px;
+ 	}
+ 	/*stilizari inputuri*/
+
+ 		input[type="telephone"]{
+ 		border:2px inset grey;
+ 		font-family: Georgia;
+ 		font-size:12px;
+ 	}
+ 	input[type="email"]{
+ 		border:2px inset grey;
+ 		font-family: Georgia;
+ 		font-size:12px;
+ 	}
+ 	input[type="text"]{
+ 		border:3px outset #80808070;
+ 		font-size:14px;
+ 	}
+ 	input[type="date"]{
+ 		border:3px outset #80808070;
+ 	}
+ 	input[type="file"]{
+ 		border:5px double #aaaaaa38;
+ 	}
+ 	input[type="submit"]{
+ 	margin:0 auto;
+    width:100px;
+    color:black
+    font-size:12px;
+    margin-top:7px;
+    background-color: lightgreen;
+    border-radius:50%;
+    margin-right:10px;
+ 	}
+ 	input[type="reset"]{
+ 	margin:0 auto;
+    width:100px;
+    color:black
+    font-size:12px;
+    margin-top:7px;
+    background-color: fuchsia;
+    border-radius:50%;
+    margin-left:10px;
+ 	}
+ 	.inner-button{
+ 		align-items: center;
+ 		text-align:center;
+ 		display: inline-block;
+ 	}
+ 	input[type="submit"]:hover{
+ 		font-style: italic;
+ 		font-size:15px;
+ 		color:darkorange
+ 	}
+ 	input[type="reset"]:hover{
+ 		font-style: italic;
+ 		font-size:15px;
+ 		color:darkorange;
+ 	}
+   input[type="text"]:focus{
+ 		font-size:18px;
+ 		color:blue;
+ 		margin:15px 0 15px 0;
+ 		background: url("baloane.jpg");
+ 		background-repeat: repeat-x;
+ 	}
+ 	 input[type="email"]:focus{
+ 		font-size:18px;
+ 		color:blue;
+ 		margin:15px 0 15px 0;
+ 		background: url("baloane.jpg");
+ 		background-repeat: repeat-x;
+ 	}
+ 	 input[type="telephone"]:focus{
+ 		font-size:18px;
+ 		color:blue;
+ 		margin:15px 0 15px 0;
+ 		background: url("baloane.jpg");
+ 		background-repeat: repeat-x;
+ 	}
+ 	#Adresa:focus{
+ 		font-size:18px;
+ 		color:blue;
+ 		margin:15px 0 15px 0;
+ 		background: url("baloane.jpg");
+ 		background-repeat: repeat-x;
+ 	}
+ 	.form-personal-information{
+ 		background-image: url("image_750x_606425ee12cd6.jpg");
+background-repeat:round;
+       /* background-color: rgb(255 182 193); */
+ 		
+ 	}
+ 	input[type="button"]:hover{
+ 		background-color:olive;
+ 		color:brown;
+ 	}
+ 	
+    
+ 	
+ 
+ 
+ 
+

@@ -1,0 +1,61 @@
+
+html, body{
+margin:0;
+height:100%;
+text-align: center;
+	
+height:100%;
+background-repeat: no-repeat;
+background-position: fixed;
+background-size: cover;
+scroll-behavior: smooth;
+}
+
+h1{
+	font-size: 36px;
+	font-family:Lucida Handwriting;
+	margin-top: 150px;
+	margin-bottom:50px;
+
+	transition: color 1.5s ease;
+ 	position:relative;
+ 	-webkit-animation: juggle 10s 2s infinite alternate;
+}
+ 	@keyframes juggle{
+ 	
+    0%{color:#da657a;left:0;top:0;}
+ 	20%{color:red;left:400px;top:0;}
+ 	40%{color:yellow;left:400px; top:400px;}
+ 	60%{color:blue;left:-400px;top:400px;}
+ 	80%{color:green;left:-400px;top:0px;}
+ 	100% {color:#da657a;left:0;top:0;right:0;}
+
+ 	}
+	
+
+}
+.didi{
+	color:#be4d61;
+}
+
+h3{
+
+	
+	font-size:30px;
+	font-family:Times New Roman;
+	color:#640d72;
+	font-weight:300;
+	font-style:italic;
+
+}
+p, h3{
+	display: inline;
+}
+
+p{
+	color:red;
+	font-size: 25px;
+	font-weight: 500;
+	border:1px dotted yellow;
+	background-color:#f1e5e5;
+}

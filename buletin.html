@@ -1,0 +1,142 @@
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Buletin</title>
+	</head>
+	 <link rel ="stylesheet" href ="buletinStyle.css" type="text/css">
+	 <link rel ="icon" href ="NjMwJnpjPTEmaGFzaD03N2M0MmY4NTA2NDAxMDVhNjI5OWVkNWNmMGVlZTllNQ==.thumb.jpg">
+	 <script type="text/javascript" src ="cnp+seria.js"></script>
+	 <script type="text/javascript" src ="programValidations.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	 <meta charset="UTF-8" name ="Buletin" description ="Pagina de facut buletin">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <style>
+	 	
+	 </style>
+	<body>
+	<div class ="big-page">
+		
+			<h1> Bun venit la Directia Locala de Evidenta a Persoanelor</h1>
+			<i class ="atentie" style = "color:; font-size:14px; font-weight:bold; font-family:Helvetica">Va rog completati corect datele de mai jos </i>
+
+			<div class ="forms">
+				<div class = form-personal-information>
+
+					<form action ="POST" name="buletin" id = "buletinul_meu" onsubmit="return programValidations()"> <!-- aici se va completa onsubmit ="numele functiei javascript"!-->
+						<fieldset class="field1">
+						<h2>Te rugam sa introduci toate datele corecte.Programul oricum va contine validari pe campuri!</h3>
+	<!-- in javascript sa pun conditie sa inceapa numele si prenumele cu litera mare, altfel sa dea eroare!-->
+						<label for ="nume">Nume de familie</label>
+						<input type ="text" id ="nume" placeholder="Nume familie" required="yes" title ="Scrieti prima litera cu majuscula" style="color:#324e02" class ="item">
+						
+						<label for ="prenume">Prenumele tau</label>
+						<input type ="text" id ="prenume" placeholder="Prenume" required="yes" title ="Scrieti prima litera cu majuscula" style="color:#324e02" class ="item">
+						<br>
+						<label for ="cetatenie">Cetatenia/Nationalitate</label>
+						<input type ="text" id ="cetatenie" placeholder="Nationalitate" required="yes" value ="Romana" title="Daca vrei daneza sau engleza, poti schimba :)" style="color:#324e02" class ="item">
+						<br>
+						<label for ="prenume_tata">Prenume tata</label>
+						<input type ="text" id="prenume_tata" placeholder="Prenume tata" required="yes" title ="Scrieti prima litera cu majuscula" style="color:#324e02" class ="item">
+						<label for ="prenume_mama">Prenume mama</label>
+						<input type ="text" id ="prenume_mama" placeholder="Prenume mama" required="yes" title ="Scrieti prima litera cu majuscula" style="color:#324e02" class ="item">
+						<br>
+						<label for ="birthdate">Data nasterii</label>
+						<input type ="date" id ="birthdate" placeholder="Data nasterii" required="yes">
+						<br>
+						<label for="Judet">Judet</label>
+						<input type = text id ="Judet" list ="judete" name ="judete" >
+						<datalist id ="judete">
+							<option value ="Bacau">Bacau</option>
+							<option value ="Botosani">Botosani</option>
+							<option value ="Galati">Galati</option>
+							<option value ="Iasi">Iasi</option>
+							<option value ="Neamt">Neamt</option>
+							<option value ="Suceava">Suceava</option>
+							<option value ="Vaslui">Vaslui</option>
+							<option value ="Vrancea">Vrancea</option>
+							<option value ="Altul">Altul</option>
+						</datalist>
+						<label for = "Adresa">Adresa</label>
+						<textarea id ="Adresa" rows = "3" cols = "50" placeholder ="strada, bloc/casa, localitate, judet" title="Adresa de locuinta" required="yes" style="color:blue" ></textarea>
+						
+
+						</fieldset>
+
+
+						<fieldset class = "field2">
+							<h3> Aceste intrebari sunt pentru a fi siguri ca tu esti cel care completeaza datele!</h3>
+							<p>Cine este membrul de familie preferat?</p>
+								<label for ="tata">Tata</label>
+								<input type = "checkbox" id ="tata" name ="answer" value ="tata" title ="O singura optiune">
+								<label for="elena">Elena</label>
+								<input type ="checkbox" id ="elena" name ="answer" value ="elena" title ="O singura optiune">
+								<label for ="ico">Ico</label>
+								<input type ="checkbox" id="ico" name ="answer" value ="ico" title ="O singura optiune">
+								<label for ="luci">Luci</label>
+								<input type="checkbox" id ="luci" name ="answer" value ="luci" title ="O singura optiune">
+
+								<br>
+
+								<p>Animalul tau preferat este?</p>
+								<label for ="miti">Miti</label>
+								<input type = "checkbox" id ="miti" name ="answer2" value ="miti" title ="O singura optiune">
+								<label for="tomi">Tomi</label>
+								<input type ="checkbox" id ="tomi" name ="answer2" value ="tomi" title ="O singura optiune">
+								<label for ="ricki">Ricki</label>
+								<input type ="checkbox" id="ricki" name ="answer2" value ="ricki" title ="O singura optiune">
+								<label for ="altceva">Altul</label>
+								<input type="checkbox" id ="altceva" name ="answer2" value ="altceva" title ="O singura optiune">
+
+								<br>
+
+								<p>Magazinul tau preferat este?</p>
+								<label for ="lidl">Lidl</label>
+								<input type = "checkbox" id ="lidl" name ="answer3" value ="lidl" title="O singura optiune">
+								<label for="grecu">Grecu</label>
+								<input type ="checkbox" id ="grecu" name ="answer3" value ="grecu" title ="O singura optiune">
+								<label for ="pepco">Pepco</label>
+								<input type ="checkbox" id="pepco" name ="answer3" value ="pepco" title ="O singura optiune">
+								<label for ="penny">Penny</label>
+								<input type="checkbox" id ="penny" name ="answer3" value ="penny" title ="O singura optiune">
+
+						</fieldset>
+
+						<fieldset class ="field3">
+							<h4>Vom avea nevoie de mail si telefon si o poza personala pentru a va anunta cand este gata buletinul si mai jos va veti genera automat CNP si seria pe baza informatiilor personale</h4>
+							<label for ="email">Email</label>
+							<input type ="email" id ="email" placeholder="Email personal" required pattern =".+@gmail.com" oninvalid="this.setCustomValidity('Adresa de gmail')" oninput="this.setCustomValidity('')" required="yes" class ="personal">
+							<label for="telephone">Telefon</label>
+							<input type ="telephone" id ="telephone" placeholder="Telefon" required="yes" pattern="[0-9]{10}" oninvalid="this.setCustomValidity('Numarul trebuie sa aiba 10 cifre')" oninput="this.setCustomValidity('')" class ="personal">
+							<br>
+							<label for ="poza">Poza</label>
+							<input type ="file" id ="poza" name ="poza" accept =".jpg, .jpeg, .png" title="Poza de buletin" class ="poza" required="yes">
+
+							<br>
+
+							<!--generate CNP + seria buletin-->
+							
+						
+							<input type = "button" value="Generare CNP pe baza datelor" title ="Apasa pentru generare" class ="inner-button" onclick="cnp_generation();"/>
+							<input type ="text" id ="cnp" name ="cnp">
+							<input type="button" value ="Generare seria si nr buletin" title ="Apasa pentru generare" class ="inner-button" onclick="generate_series();"/>
+							<input type ="text" id ="seria_numar" name ="seria_numar" >
+						</fieldset>
+						
+
+					<br>
+					<br>
+						<input type ="submit" value ="Send" id = "buton" title ="Trimite datele">
+						<input type ="reset" value ="Reset" id ="buton2" title ="Resetare intreg formular">
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+
+	</body>
+	</html>
