@@ -9,6 +9,7 @@ background-repeat: no-repeat;
 background-position: fixed;
 background-size: cover;
 scroll-behavior: smooth;
+background-image: url("pisici.jpg")
 }
 
 h1{
@@ -44,8 +45,12 @@ h3{
 	font-size:30px;
 	font-family:Times New Roman;
 	color:#640d72;
-	font-weight:300;
+	font-weight:800;
 	font-style:italic;
+	margin-bottom:200px;
+	text-align:center;
+	margin-left:365px;
+	margin-right:365px;
 
 }
 p, h3{
@@ -58,4 +63,21 @@ p{
 	font-weight: 500;
 	border:1px dotted yellow;
 	background-color:#f1e5e5;
+}
+.picture{
+	border:4px double yellow;
+	padding :0, auto;
+	
+	width:300px;
+	display: inline-block;
+	margin-right:215px;
+	margin-top:50px;
+	align-items:center;
+	margin-bottom:100px;
+	text-align:center;
+	height:200px;
+    margin-left:200px;
+	background-image:url("download.jpg");
+	background-repeat: repeat-x;
+	position: relative;
 }

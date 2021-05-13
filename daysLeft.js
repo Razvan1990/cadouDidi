@@ -1,7 +1,4 @@
-
-
-	
-	date = new Date();
+    date = new Date();
 
 	var day = date.getDate();
 	if(day<10){
@@ -18,6 +15,10 @@
 //este in milisecunde
 	var milisecundsDays = new Date(endDate) - new Date(today);
 	var daysRemaining = milisecundsDays /(1000 * 3600 * 24);
+
+	if(daysRemaining<0){
+		daysRemaining = 0;
+	}
 	var daysRemainingConverted = daysRemaining.toString();
 	
 
